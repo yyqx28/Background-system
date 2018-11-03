@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+    <!--左侧部分-->
+    <div class="left">
+        <div class="left_top">
+            <a href="index.html">Modernize</a>
+            <img src="images/menu1.jpg" alt=""/>
+        </div>
+        <div class="left_bottom">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont icon-dashboard"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li id="start_click">
+                    <a href="javascript:;">
+                        <div class="a_left">
+                            <i class="iconfont icon-laptop"></i>
+                            <span>Components</span>
+                        </div>
+                        <div class="a_right">
+                            <i class="iconfont icon-xiangxiajiantou"></i>
+                        </div>
+                    </a>
+                </li>
+                <!--点击出现-->
+                <div id="clicks">
+                    <li class="clicks"><a href="">Cards</a></li>
+                    <li class="clicks"><a href="">Carousels</a></li>
+                    <li class="clicks"><a href="">Forms</a></li>
+                    <li class="clicks"><a href="">Modals</a></li>
+                    <li class="clicks"><a href="">Tables</a></li>
+                </div>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-pie-chart"></i>
+                        <span>Charts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-th"></i>
+                        <span>Grid Layouts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="a_left">
+                            <i class="iconfont icon-pages"></i>
+                            <span>Pages</span>
+                        </div>
+                        <div class="a_right">
+                            <i class="iconfont icon-xiangxiajiantou"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-xinfeng"></i>
+                        <span>Mailbox</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-window-restore"></i>
+                        <span>Widgets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-table"></i>
+                        <span>Pricing Tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="a_left">
+                            <i class="iconfont icon-users"></i>
+                            <span>User</span>
+                        </div>
+                        <div class="a_right">
+                            <i class="iconfont icon-xiangxiajiantou"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="iconfont icon-map"></i>
+                        <span>Maps</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--右侧部分-->
+    <div class="right">
+        <div class="right_top">
+            <div class="contain_bar">
+                <button class="btn">
+                    <i class="iconfont icon-bars"></i>
+                </button>
+            </div>
+            <div class="contain_search">
+                <input type="text" value="Search">
+                <button class="but">Search</button>
+            </div>
+            <ul>
+                <li>
+                    <a href="" id="a_bell">
+                        <i class="iconfont icon-cc-bell-o"></i>
+                        <!--鼠标悬浮出现-->
+                        <div id="bells">
+                            <h4>User notifications</h4>
+                            <div class="people">
+                                <div class="headpic">
+                                    <span><i class="iconfont icon-user"></i></span>
+                                </div>
+                                <div class="content">
+                                    <p><span class="other">John Doe</span> If you feel that it hurts you,it probably hurts the other person, too.</p>
+                                    <p> 4 mins ago</p>
+                                </div>
+                            </div>
+                            <div class="people">
+                                <div class="headpic">
+                                    <span><i class="iconfont icon-user"></i></span>
+                                </div>
+                                <div class="content">
+                                    <p><span class="other">John Doe</span> If you feel that it hurts you,it probably hurts the other person, too.</p>
+                                    <p> 4 mins ago</p>
+                                </div>
+                            </div>
+                            <div class="people">
+                                <div class="headpic">
+                                    <span><i class="iconfont icon-user"></i></span>
+                                </div>
+                                <div class="content">
+                                    <p><span class="other">John Doe</span> If you feel that it hurts you,it probably hurts the other person, too.</p>
+                                    <p> 4 mins ago</p>
+                                </div>
+                            </div>
+                            <div class="people">
+                                <div class="headpic">
+                                    <span><i class="iconfont icon-user"></i></span>
+                                </div>
+                                <div class="content">
+                                    <p><span class="other">John Doe</span> If you feel that it hurts you,it probably hurts the other person, too.</p>
+                                    <p> 4 mins ago</p>
+                                </div>
+                            </div>
+                            <div class="viewAll">
+                                view all notifications
+                            </div>
+
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" id="a_spinner">
+                        <i class="iconfont icon-spinner"></i>
+                        <div id="spinners">
+                            <h4>Shortcuts</h4>
+                            <div class="spinList"><i class="iconfont icon-pie-chart"></i> Sed feugiat</div>
+                            <div class="spinList"><i class="iconfont icon-dashboard"></i> Aliquam sed</div>
+                            <div class="spinList"><i class="iconfont icon-tasks"></i> Lorem ipsum</div>
+                            <div class="spinList"><i class="iconfont icon-eye"></i> Cras rutrum</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" id="a_user">
+                        <i class="iconfont icon-user">
+                        <div id="users">
+                            <div class="users_h">
+                                <div class="h_l">
+                                    <img src="images/profile.jpg" alt=""/>
+                                </div>
+                                <div class="h_r">
+                                    <h4>Will Smith</h4>
+                                    <p>info@example.com</p>
+                                </div>
+                            </div>
+                            <div class="userList"><i class="iconfont icon-user"></i> My Profile</div>
+                            <div class="userList"><i class="iconfont icon-map"></i> My Profile</div>
+                            <div class="userList"><i class="iconfont icon-xinfeng"></i> My Profile</div>
+                            <div class="userList"><i class="iconfont icon-xin"></i> My Profile</div>
+                            <div class="userList"><i class="iconfont icon-smile"></i> My Profile</div>
+                            <div class="users_t">
+                                Logout
+                            </div>
+                        </div>
+                    </i></a>
+                </li>
+            </ul>
+        </div>
+        <!--pie chart-->
+        <div class="chart">
+            <div class="chart_left">
+                <div class="state">
+                    <div class="state_r">
+                        <h5>Projects</h5>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <div class="state_l">
+                        <p>340 <span><i class="iconfont icon-edit"></i></span></p>
+                    </div>
+                </div>
+                <div class="state">
+                    <div class="state_r">
+                        <h5>Clients</h5>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <div class="state_l">
+                        <p>250 <span><i class="iconfont icon-smile"></i></span></p>
+                    </div>
+                </div>
+                <div class="state">
+                    <div class="state_r">
+                        <h5>Tasks</h5>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <div class="state_l">
+                        <p>232 <span><i class="iconfont icon-tasks"></i></span></p>
+                    </div>
+                </div>
+                <div class="state">
+                    <div class="state_r">
+                        <h5>Employees</h5>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <div class="state_l">
+                        <p>190 <span><i class="iconfont icon-users"></i></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="chart_right">
+                <h4>Pie Chart</h4>
+                <div class="pie" id="pie_chart"></div>
+            </div>
+        </div>
+        <!--graph-->
+        <div class="graph">
+            <h4>Graph</h4>
+            <div class="weekly_Profit" id="Graph">
+            </div>
+        </div>
+        <!--bar chart-->
+        <div class="bar_chart">
+            <h4>Bar Chart</h4>
+            <div class="bar" id="Bar_Chart"></div>
+        </div>
+        <!--multi matthew scott-->
+        <div class="multi_matthew_browser">
+            <div class="multi">
+                <h4>Multi range Calender</h4>
+                <div class="calender">
+
+                </div>
+            </div>
+            <div class="matthew">
+                <div class="header">
+                    <div class="text">
+                        <img src="images/profile.jpg" alt=""/>
+                        <h5>Matthew Scott</h5>
+                        <p>@Lorem ipsum</p>
+                    </div>
+                </div>
+                <div class="follower">
+                    <div class="f_list">
+                        <a href=""><i class="iconfont icon-comments"></i></a>
+                    </div>
+                    <div class="f_list">
+                        <a href=""><i class="iconfont icon-eye"></i></a>
+                    </div>
+                    <div class="f_list">
+                        <a href=""><i class="iconfont icon-xin"></i></a>
+                    </div>
+                </div>
+                <div class="m_p">
+                    <a href="">
+                        <div class="a_left">
+                            <i class="iconfont icon-xinfeng"></i>
+                            <span>Messages</span>
+                        </div>
+                        <div class="a_right">
+                            <span>13</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="a_left">
+                            <i class="iconfont icon-user"></i>
+                            <span>Profile</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="browser">
+                <h4>Browser Stats</h4>
+                <div class="b_stats">
+                    <div class="stats_list">
+                        <div class="s_left">
+                            <p>GoogleChrome</p>
+                        </div>
+                        <div class="s_right">
+                            <span>
+                                <span class="span_l"></span></span>
+                                85%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stats_list">
+                        <div class="s_left">
+                            <p>Firefox</p>
+                        </div>
+                        <div class="s_right">
+                            <span>
+                                <span class="span_l"></span></span>
+                            35%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stats_list">
+                        <div class="s_left">
+                            <p>Internet Explorer</p>
+                        </div>
+                        <div class="s_right">
+                           <span>
+                                <span class="span_l"></span></span>
+                            78%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stats_list">
+                        <div class="s_left">
+                            <p>Safari</p>
+                        </div>
+                        <div class="s_right">
+                           <span>
+                                <span class="span_l"></span></span>
+                            50%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stats_list">
+                        <div class="s_left">
+                            <p>Opera</p>
+                        </div>
+                        <div class="s_right">
+                            <span>
+                                <span class="span_l"></span></span>
+                            80%
+                            </span>
+                        </div>
+                    </div>
+                    <div class="stats_list">
+                        <div class="s_left">
+                            <p>Others</p>
+                        </div>
+                        <div class="s_right">
+                            <span>
+                                <span class="span_l"></span></span>
+                            60%
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Countdown Timer-->
+        <div class="timer">
+            <h4>Countdown Timer</h4>
+            <div class="d_h_m_s">
+                <div class="days section">
+                    <div class="days_num"></div>
+                    <div class="days_item">
+                        DAYS
+                    </div>
+                </div>
+                <div class="hours  section">
+                    <div class="hours_num"></div>
+                    <div class="days_item">
+                        HOURS
+                    </div>
+                </div>
+                <div class="minutes  section">
+                    <div class="minutes_num"></div>
+                    <div class="days_item">
+                        MINUTES
+                    </div>
+                </div>
+                <div class="seconds  section">
+                    <div class="seconds_num"></div>
+                    <div class="days_item">
+                        SECONDS
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Copyright-->
+        <div class="copyright">
+            Copyright &copy; 2018.Company name All rights reserved
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript"  src='js/echarts.js'></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    // 右侧点击出现二级菜单
+    var btn = document.getElementById("#start_click");
+    btn.onclick = function(){
+        var clicks = document.getElementById("#clicks");
+        clicks.style.display = "block";
+    }
+
+</script>
