@@ -13,9 +13,9 @@ gulp.task("copyImg",function(){
         .pipe(gulp.dest("D:\\phpStudy\\WWW\\Background-system\\images"));
 });
 // gulp.task("copyCss",function(){
-//     gulp.src("css/**/*")
-//         .pipe(gulp.dest("D:\\phpStudy\\WWW\\Background-system\\css"));
-// });
+ //     gulp.src("css/**/*")
+ //         .pipe(gulp.dest("D:\\phpStudy\\WWW\\Background-system\\css"));
+ // });
 gulp.task("copyJs",function(){
     gulp.src("js/**/*")
         .pipe(gulp.dest("D:\\phpStudy\\WWW\\Background-system\\js"));

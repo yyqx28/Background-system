@@ -7,6 +7,7 @@
     font-weight: 100;
     margin-bottom: 28px;
   }
+  //Grid Options
   .g_p{
     padding:27px 16px 48px 16px;
     background: #ffffff;
@@ -72,6 +73,7 @@
       }
     }
   }
+  //Basic Grids Classes
   .b_g_c{
     padding:32px 16px;
     background: #ffffff;
@@ -145,6 +147,7 @@
       }
     }
   }
+  //Horizontal Grid Alignment
   .h_g_a{
     padding:32px 16px;
     background: #ffffff;
@@ -190,6 +193,7 @@
       -webkit-justify-content: space-between;
     }
   }
+  //Vertical Grid Alignment
   .v_g_a{
     padding:32px 16px;
     background: #ffffff;
@@ -236,6 +240,7 @@
       }
     }
   }
+  //Ordered Grid Classes
   .o_g_c{
     padding:32px 16px;
     background: #ffffff;
@@ -265,6 +270,7 @@
       margin-bottom: 0px;
     }
   }
+  //Grid Offset Classes
   .g_o_c{
     padding:32px 16px;
     background: #ffffff;
@@ -286,6 +292,7 @@
       width:100%;
       display: flex;
       flex-wrap: nowrap;
+      -webkit-justify-content: space-between;
       .two{
         width:33%;
         background: #e6e2eb;
@@ -293,11 +300,68 @@
         padding:16px 0 16px 16px;
       }
     }
-    .goc_one:nth-child(2){
-      -webkit-justify-content: space-between;
-    }
-    .goc_one:nth-child(3){
+    .goc_two{
+      width:100%;
+      display: flex;
+      flex-wrap: nowrap;
       -webkit-justify-content: flex-end;
+      .two{
+        width:25%;
+        background: #e6e2eb;
+        border:1px solid #c9c1d5;
+        padding:16px 0 16px 16px;
+      }
+      .two:nth-child(1){
+        margin-right:25% ;
+      }
+    }
+    .goc_three{
+      width:50%;
+      margin-left: 25%;
+      .two{
+        width:100%;
+        background: #e6e2eb;
+        border:1px solid #c9c1d5;
+        padding:16px 0 16px 16px;
+
+      }
+    }
+  }
+  //Nesting Grids
+  .n_g{
+    padding:32px 16px;
+    background: #ffffff;
+    box-shadow: 0 0 10px #6a6869;
+    margin-bottom: 46px;
+    h5{
+      font-size:24px ;
+      color:#3e3e3e ;
+      font-weight: 100;
+      margin-bottom: 25px;
+    }
+    .level{
+      text-align: left;
+      width:72%;
+      background: #e6e2eb;
+      border:1px solid #c9c1d5;
+      padding-top: 20px;
+      padding-bottom: 14px;
+      p{
+        font-size: 12px;
+        color: #212529;
+        margin-left: 16px;
+      }
+      .basic_div{
+        display: flex;
+        flex-wrap: nowrap;
+        .two{
+          width:50%;
+          background: #d1c9da;
+          border:1px solid #b8adc8;
+          padding:16px 0 16px 16px;
+        }
+      }
+
     }
   }
 }
