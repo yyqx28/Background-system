@@ -1,3 +1,9 @@
+.left_bottom ul li:nth-child(5) {
+  background: #4463dc; }
+
+.left_bottom ul li:first-child {
+  background: #4c6ef5; }
+
 .right {
   text-align: center; }
   .right h4 {

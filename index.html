@@ -16,13 +16,13 @@
         <div class="left_bottom">
             <ul>
                 <li>
-                    <a href="javascript:;">
+                    <a href="index.html">
                         <i class="iconfont icon-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li id="start_click">
-                    <a href="javascript:;">
+                <li >
+                    <a id="start_click">
                         <div class="a_left">
                             <i class="iconfont icon-laptop"></i>
                             <span>Components</span>
@@ -33,21 +33,21 @@
                     </a>
                 </li>
                 <!--点击出现-->
-                <div id="clicks">
-                    <li class="clicks"><a href="">Cards</a></li>
+                <ul id="clicks">
+                    <li class="clicks"><a href="cards.html">Cards</a></li>
                     <li class="clicks"><a href="">Carousels</a></li>
-                    <li class="clicks"><a href="">Forms</a></li>
+                    <li class="clicks"><a href="forms.html">Forms</a></li>
                     <li class="clicks"><a href="">Modals</a></li>
                     <li class="clicks"><a href="">Tables</a></li>
-                </div>
+                </ul>
                 <li>
-                    <a href="">
+                    <a href="charts.html">
                         <i class="iconfont icon-pie-chart"></i>
                         <span>Charts</span>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="grids.html">
                         <i class="iconfont icon-th"></i>
                         <span>Grid Layouts</span>
                     </a>
@@ -70,7 +70,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="widgets.html">
                         <i class="iconfont icon-window-restore"></i>
                         <span>Widgets</span>
                     </a>
@@ -262,7 +262,70 @@
             <div class="multi">
                 <h4>Multi range Calender</h4>
                 <div class="calender">
-
+                  <div class="mouth">
+                      <div class="mouth_l">SEP</div>
+                      <div class="mouth_c">
+                          <h6>October</h6>
+                          <p>2018</p>
+                      </div>
+                      <div class="mouth_r">NOV</div>
+                  </div>
+                  <table cellpadding="0" cellspacing="0">
+                      <tr>
+                          <td class="red">SUN</td>
+                          <td>MON</td>
+                          <td>TUE</td>
+                          <td>WED</td>
+                          <td>THU</td>
+                          <td>FRI</td>
+                          <td class="red">SAT</td>
+                      </tr>
+                      <tr>
+                          <td class="red"></td>
+                          <td>1</td>
+                          <td>2</td>
+                          <td>3</td>
+                          <td>4</td>
+                          <td>5</td>
+                          <td class="red">6</td>
+                      </tr>
+                      <tr>
+                          <td class="red">7</td>
+                          <td>8</td>
+                          <td>9</td>
+                          <td>10</td>
+                          <td>11</td>
+                          <td>12</td>
+                          <td class="red">13</td>
+                      </tr>
+                      <tr>
+                          <td class="red">14</td>
+                          <td>15</td>
+                          <td>16</td>
+                          <td>17</td>
+                          <td>18</td>
+                          <td>19</td>
+                          <td class="red">20</td>
+                      </tr>
+                      <tr>
+                          <td class="red">21</td>
+                          <td>22</td>
+                          <td>23</td>
+                          <td>24</td>
+                          <td>25</td>
+                          <td>26</td>
+                          <td class="red">27</td>
+                      </tr>
+                      <tr>
+                          <td class="red">28</td>
+                          <td>29</td>
+                          <td>30</td>
+                          <td>31</td>
+                          <td></td>
+                          <td></td>
+                          <td class="red"></td>
+                      </tr>
+                  </table>
                 </div>
             </div>
             <div class="matthew">
@@ -413,12 +476,3 @@
 </html>
 <script type="text/javascript"  src='js/echarts.js'></script>
 <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript">
-    // 右侧点击出现二级菜单
-    var btn = document.getElementById("#start_click");
-    btn.onclick = function(){
-        var clicks = document.getElementById("#clicks");
-        clicks.style.display = "block";
-    }
-
-</script>

@@ -1,3 +1,11 @@
+// 右侧点击出现二级菜单
+var btn = document.getElementById("start_click");
+btn.onclick = function(){
+    var clicks = document.getElementById("clicks");
+    clicks.style.display = "block";
+    console.log(clicks);
+}
+
 // echarts中变量a、b、c在不同图表类型下代表数据含义为：
 // 折线（区域）图、柱状（条形）图: a（系列名称），b（类目值），c（数值）, d（无）
 // 散点图（气泡）图 : a（系列名称），b（数据名称），c（数值数组）, d（无）
@@ -10,6 +18,8 @@
 // <Array> params : 数组内容同模板变量，[[a, b, c, d], [a1, b1, c1, d1], ...]
 // <String> ticket : 异步回调标识
 // <Function> callback : 异步回调，回调时需要两个参数，第一个为前面提到的ticket，第二个为填充内容html
+// 类目轴就是横坐标标签类型为类目（type: 'category'）的坐标轴
+// 非类目轴就是除了标签类型为类目的其他坐标轴，有 时间（time），数值（value），对数（log）3种
 // ---------------------
 
 
@@ -128,7 +138,6 @@ if (option && typeof option === "object") {
 
 //Bar Chart
 var myChart = echarts.init(document.getElementById("Bar_Chart"));
-// var value = ['10', '20', '30', '40', '50', '60', '70', '80', '90','100'];
 var option = {
     legend: {
         data: ['直接访问']
@@ -142,6 +151,7 @@ var option = {
     },
     xAxis: {
         type: 'value',
+        // data:['10%','20%','30%','40%','50%','60%','70%','80%','90%','100%'],
         splitLine:{
             lineStyle:{
                 type:'dashed'
@@ -150,7 +160,6 @@ var option = {
         axisLabel:{
             formatter:'{value}%',
             interval:0
-
         },
         boundaryGap:true
     },
@@ -185,7 +194,7 @@ var option = {
             data: ['68', '76', '90', '76', '90', '65', '50']
         }
     ]
-    };
+};
 if (option && typeof option === "object") {
     myChart.setOption(option, true);
 }
